@@ -71,7 +71,7 @@ class BoatList extends React.Component {
         });
 
         return (
-            <div className="container pt-3">
+            <div className="pt-3">
                 <div className="row boat-fielter">
                     <div className="col-md-6 form-group">
                         <label htmlFor="boatFilterSize">Filter by <strong>size</strong></label>
