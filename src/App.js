@@ -9,7 +9,7 @@ function App() {
         <Navbar />
       </header>
 
-      <div className="container">
+      <div className="container pb-4">
         <BoatList />
       </div>
     </div>

@@ -18,12 +18,12 @@ const BoatListItem = (props) => {
                         <div className="card-body">
                             <h3 className="card-title">{boat.name} {boat.year}</h3>
                             <div className="card-text mb-3">
-                                <small>Reviews: {boat.reviews.total}</small>
+                                <p>Reviews: <span className="badge badge-primary">{boat.reviews.total}</span></p>
                             </div>
                             <div className="card-text">
                                 <ul className="boat-details">
-                                    <li><strong>{boat.marina}</strong></li>
-                                    <li>Size: {boat.length}</li>
+                                    <li><strong>{boat.locality} > {boat.country}</strong></li>
+                                    <li className="text-info">Size: {boat.length}</li>
                                     <li className="text-info">Cabins: {boat.cabins}</li>
                                     <li className="text-info">Guests: {boat.guests}</li>
                                 </ul>

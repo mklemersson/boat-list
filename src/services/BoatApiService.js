@@ -6,15 +6,16 @@ class BoatApiService {
         const FETCH_ACTIVE_BOATS_QUERY = gql`
             query {
                 getBoats(input: { active: true }) {
-                    id
-                    name
-                    year
-                    price
-                    cabins
-                    marina
-                    length
-                    guests
-                    imageUrl
+                    id,
+                    name,
+                    year,
+                    price,
+                    cabins,
+                    country,
+                    locality,
+                    length,
+                    guests,
+                    imageUrl,
                     reviews {
                       total
                     }
