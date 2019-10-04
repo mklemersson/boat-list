@@ -10,7 +10,7 @@ function App() {
       </header>
 
       <div className="container">
-        <BoatList containerClass="boat-list col-md-8 mr-auto ml-auto" />
+        <BoatList />
       </div>
     </div>
   );
