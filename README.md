@@ -11,9 +11,9 @@ A React App that shows a list of active boats using GraphQL.
 
 ### Running the project
 ```bash
-yarn install
+npm i
 
-yarn start
+npm run start
 ```
 
-After running `yarn start` you'll be able to see the application running at [http://localhost:3000](http://localhost:3000)
+After running `npm run start` you'll be able to see the application running at [http://localhost:3000](http://localhost:3000)

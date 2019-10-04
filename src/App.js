@@ -1,18 +1,27 @@
 import React from 'react';
+import Home from './components/Home/Home';
 import Navbar from './components/Layout/NavBar';
 import BoatList from './components/BoatList/BoatList';
 
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 function App() {
   return (
-    <div className="body-wrapper">
-      <header>
-        <Navbar />
-      </header>
+    <Router>
+      <div className="body-wrapper">
+        <header>
+          <Navbar />
+        </header>
 
-      <div className="container pb-4">
-        <BoatList />
+        <Switch>
+          <div className="container pb-4">
+            <Route exact path="/" component={Home} />
+
+            <Route path="/search" component={BoatList} />
+          </div>
+        </Switch>
       </div>
-    </div>
+    </Router>
   );
 }
 
