@@ -1,0 +1,23 @@
+@import "~bootstrap/scss/bootstrap.scss";
+@import "./bootstrap-theme.min.css";
+
+.boat-list {
+    margin-top: 3rem;
+}
+
+.boat-details {
+    list-style-type: none;
+    padding: 0;
+}
+
+.boat.card-img-top {
+    background-size: cover;
+    overflow: hidden;
+    display: block;
+    height: 100%;
+    min-height: 200px;
+}
+
+.boat-price {
+    font-size: 1.4em;
+}
